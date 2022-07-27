@@ -1,10 +1,39 @@
 body {
     background-color: #282a36;
     font-family: 'Fira Code', monospace;
+    color: #f1fa8c;
 }
 
-.notes {
+h1 {
+    color: #ff79c6;
+}
+
+nav {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    background-color: #f1fa8c;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-family: 'Fira Code', monospace;
+    background-color: #50fa7b;
+    color: #282a36;
+    border: none;
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ffb86c;
 }

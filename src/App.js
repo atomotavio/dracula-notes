@@ -1,28 +1,23 @@
 import React from "react";
-import Title from "./components/Title";
-import Notes from "./components/Notes";
-import ButtonNewNote from "./components/ButtonNewNote";
 import "./style/style.css";
 
 function App() {
   return (
     <>
-     <Title />
-     <ButtonNewNote />
-     <div className="notes"> 
-     <Notes />
-     <Notes />
-     <Notes />
-     <Notes />
-     <Notes />
-     <Notes />
-     <Notes />
-     <Notes />
-     <Notes />
-     <Notes />
-     <Notes />
-     <Notes />
-     </div>
+    <nav>
+      <h1>Dracula Notes</h1>
+    </nav>
+
+    <form>
+    <label for="ftitle">Title:</label><br />
+    <input type="text" name="ftitle"></input><br />
+    <label for="message">Content:</label><br />
+    <textarea name="message" rows="10" cols="30" placeholder="What do you want to say?"></textarea> <br />
+    <button type="submit">Add New Note</button>
+    </form>
+    
+
+    <footer>Developed by: Otávio</footer>
     </>
     
   );
