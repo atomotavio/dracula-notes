@@ -59,7 +59,7 @@ function App() {
     </label>
     <button type="submit">Add New Note</button>
 
-    <View notes={notes}></View>
+    <View notes={notes} deleteNote={deleteNote}></View>
     </form>
     
 
