@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import View from "./components/View";
 import "./style/style.css";
 
 // getting the values of local storage
@@ -13,7 +14,6 @@ const getDatafromLS=()=>{
 }
 
 function App() {
-
   const [notes, setNotes]=useState(getDatafromLS());
 
   const [title, setTitle]=useState('');
@@ -58,6 +58,8 @@ function App() {
           <textarea value={content} onChange={(e) => setContent(e.target.value)} required />
     </label>
     <button type="submit">Add New Note</button>
+
+    <View notes={notes}></View>
     </form>
     
 
