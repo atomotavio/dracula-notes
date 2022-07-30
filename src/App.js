@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import View from "./components/View";
+import View from "./components/View/View";
 import "./style/style.css";
 
 // getting the values of local storage
@@ -44,10 +44,6 @@ function App() {
 
   return (
     <>
-    <nav>
-      <h1>Dracula Notes</h1>
-    </nav>
-
     <form onSubmit={handleAddNoteSubmit}>
     <label>
         Title:
@@ -59,7 +55,9 @@ function App() {
     </label>
     <button type="submit">Add New Note</button>
 
+    <div>
     <View notes={notes} deleteNote={deleteNote}></View>
+    </div>
     </form>
     
 

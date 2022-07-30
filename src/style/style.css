@@ -2,19 +2,11 @@ body {
     background-color: #282a36;
     font-family: 'Fira Code', monospace;
     color: #f1fa8c;
+    display: flex;
 }
 
 h1 {
     color: #ff79c6;
-}
-
-nav {
-    display: flex;
-    background-color: #f1fa8c;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 form {
@@ -36,4 +28,10 @@ button {
 
 button:hover {
     background-color: #ffb86c;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
 }
