@@ -59,9 +59,6 @@ function App() {
     <View notes={notes} deleteNote={deleteNote}></View>
     </div>
     </form>
-    
-
-    <footer>Developed by: Otávio</footer>
     </>
     
   );
